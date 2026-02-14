@@ -6,15 +6,15 @@ const music = document.getElementById("bgMusic");
 let opened = false;
 
 envelope.addEventListener("click", () => {
-    if (!opened) {
-        envelope.classList.add("open");
-        card.classList.remove("hidden");
-        card.classList.add("show");
-        music.play();
-        opened = true;
-    }
+  if (!opened) {
+    envelope.classList.add("open");
+    card.classList.remove("hidden");
+    card.classList.add("show");
+    music.play();
+    opened = true;
+  }
 });
 
 cardInner.addEventListener("click", () => {
-    cardInner.classList.toggle("flipped");
+  cardInner.classList.toggle("flipped");
 });
